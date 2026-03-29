@@ -1,0 +1,28 @@
+# Weaviate 向量库配置文件
+
+# Weaviate 数据库配置
+weaviate:
+  http_host: "weaviate"
+  http_port: 8080
+  http_secure: false
+  grpc_host: "weaviate"
+  grpc_port: 50051
+  grpc_secure: false
+  api_key: "test-secret-key"
+
+# ArangoDB 数据库配置
+arango:
+  host: "http://10.117.254.37:8529"
+  database: "wiki"
+  username: "root"
+  password: "root"
+
+# 模型路径配置
+models:
+  bge_m3_path: "/workspace/codes/deepseek/deepseek_model/bge-m3"
+  bge_vl_path: "/workspace/codes/deepseek/multimodal/retrieval/image_retrieval/BGE-VL-base"
+  video_clip_path: "/workspace/codes/deepseek/multimodal/int_retrieval/video_retrieval/VideoCLIP-XL"
+  video_clip_weights: "/workspace/codes/deepseek/multimodal/int_retrieval/video_retrieval/VideoCLIP-XL/VideoCLIP-XL.bin"
+
+# 批处理大小
+batch_size: 1000

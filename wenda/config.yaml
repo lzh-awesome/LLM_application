@@ -1,0 +1,41 @@
+arango:
+  database_name: wiki
+  entity_collection: entity
+  entity_description_collection: entity_description_large
+  host: http://10.117.254.37:8529
+  link_collection: link
+  password: root
+  username: root
+cors:
+  origins:
+  - http://localhost
+  - http://localhost:8080
+  - http://127.0.0.1
+  - http://127.0.0.1:8080
+  - http://172.100.0.137:4302
+  - '*'
+embedding_model:
+  bge_m3_path: /workspace/codes/deepseek/deepseek_model/bge-m3
+reranker:
+  model_path: /workspace/codes/deepseek/kg_enhance/model/bge-reranker-v2-m3
+  max_length: 512
+llm:
+  api_key: ollama
+  base_url: http://10.117.1.238:7003/v1
+  model: qwen3:32b
+  ner_url: http://10.117.1.238:8100/ner_extract
+  ollama_api_url: http://10.117.1.238:7003/api/generate
+logging:
+  file: app.log
+  level: DEBUG
+weaviate:
+  api_key: test-secret-key
+  grpc_host: weaviate
+  grpc_port: 50051
+  http_host: weaviate
+  http_port: 8080
+
+vllm:
+  api_base: http://10.117.1.238:7018/v1
+  api_key: not-used
+  model: MiniCPM-o-2_6

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile /mnt/f/python/xinda/Codes/LLM/wenda/app/services/llm.py)"
+    ]
+  }
+}

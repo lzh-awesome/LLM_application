@@ -1,0 +1,23 @@
+api:
+  detect_api_url: http://10.117.1.238:8002/YOLO
+  keyword_extract_url: http://10.117.1.238:8100/llm_topic_and_key_word_extract
+  entity_extract_url: http://10.117.1.238:8100/e_extract
+  ner_extract_url: http://10.117.1.238:8100/ner_extract
+  retrieval_api_url: http://10.117.1.238:7001/int_retrieval_image
+  server_address: http://10.117.1.238:7003
+arango:
+  database: wikidata
+  host: http://10.117.254.37:8529
+  password: root
+  source_collection: entity_description
+  username: root
+models:
+  bge_model_path: ./bge-m3
+  brief_model: qwen3:32b
+  normal_model: qwen3:32b
+  reranker_model_path: ./bge-reranker-v2-m3
+weaviate:
+  api_key: test-secret-key
+  grpc_port: 50051
+  host: 127.0.0.1
+  http_port: 8080
